@@ -27,13 +27,13 @@ jobs:
   build:
     permissions:
       contents: read
-    uses: DSLZL/CSA-codex/.github/workflows/build-patched-codex-target.yml@8322bdb10926e57a2924cb37404e65ff9379d142
+    uses: DSLZL/CSA-codex/.github/workflows/build-patched-codex-target.yml@286434f50801b7ca4048b262c75e882083938a70
     with:
       builder_repository: DSLZL/CSA-codex-macos-x64
       cache_mode: read-write
       compat_id: ${{ inputs.compat_id }}
       request_id: ${{ inputs.request_id }}
       retention_days: 1
-      runner: macos-15-intel
+      runner: macos-26-intel
       source_commit: ${{ inputs.source_commit }}
       target: x86_64-apple-darwin
